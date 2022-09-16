@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import './index.css';
 
 import Header from './components/header/Header';
 import BookList from './components/books/BookList';
