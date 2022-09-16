@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Button from '../../UI/Button';
 
 function Book({ title, author }) {
