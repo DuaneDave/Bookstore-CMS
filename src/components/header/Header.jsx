@@ -10,7 +10,7 @@ function Header() {
             <Link to="/books">Books</Link>
           </li>
           <li>
-            <Link to="/form">Categories</Link>
+            <Link to="/category">Categories</Link>
           </li>
         </ul>
       </nav>

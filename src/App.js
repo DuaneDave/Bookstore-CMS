@@ -4,7 +4,7 @@ import './index.css';
 
 import Header from './components/header/Header';
 import BookList from './components/books/BookList';
-import Form from './components/form/Form';
+import Category from './components/books/Category';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/books" element={<BookList />} />
-        <Route path="/form" element={<Form />} />
+        <Route path="/category" element={<Category />} />
       </Routes>
     </>
   );
