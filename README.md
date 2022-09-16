@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians
+# Bookstore-CMS
 
-> Math magician is an app created with REACT | JEST here, lovers of mathematics can perform easy operations on numbers and also get access to inspiring mathematics quotes.
+Bookstore CMS is an app built with REACT | REACT-ROUTER ,here a user can add, track status, update and delete their preferred book choice
 
 ## Built With
 
@@ -21,7 +21,7 @@
 To get a local copy up and running follow these simple example steps.
 
 - Open up your command line
-- Clone this repo to your machine by using Git clone: Git clone `https://github.com/DuaneDave/Math-magicians.git`
+- Clone this repo to your machine by using Git clone: Git clone `https://github.com/DuaneDave/Bookstore-CMS.git`
 
 # Prerequisite
 
@@ -57,7 +57,7 @@ To run tests on this project if you tweaked something, run the following command
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DuaneDave/Math-magicians/issues).
+Feel free to check the [issues page](https://github.com/DuaneDave/Bookstore-CMS/issues).
 
 ## Show your support
 

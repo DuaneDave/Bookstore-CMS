@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import Button from '../../UI/Button';
+import Category from './Category';
 
 function Book({ title, author }) {
   return (
@@ -17,7 +16,7 @@ function Book({ title, author }) {
       <div>
         <span>Current Chapter</span>
         <span>Chapter 17</span>
-        <Button type="button" title="CHECK STATUS" />
+        <Category />
       </div>
     </div>
   );

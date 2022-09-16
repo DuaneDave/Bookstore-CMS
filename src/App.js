@@ -1,16 +1,20 @@
-import { Fragment } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import './index.css';
 
 import Header from './components/header/Header';
 import BookList from './components/books/BookList';
-import Form from './components/form/Form';
+import Category from './components/books/Category';
 
 function App() {
   return (
-    <Fragment>
+    <>
       <Header />
-      <BookList />
-      <Form />
-    </Fragment>
+      <Routes>
+        <Route path="/books" element={<BookList />} />
+        <Route path="/category" element={<Category />} />
+      </Routes>
+    </>
   );
 }
 
