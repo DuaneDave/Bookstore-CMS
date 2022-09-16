@@ -6,11 +6,11 @@ import Form from './components/form/Form';
 
 function App() {
   return (
-    <Fragment>
+    <>
       <Header />
       <BookList />
       <Form />
-    </Fragment>
+    </>
   );
 }
 
