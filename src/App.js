@@ -8,11 +8,13 @@ import Form from './components/form/Form';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Header />} />
-      <Route path="/books" element={<BookList />} />
-      <Route path="/form" element={<Form />} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/books" element={<BookList />} />
+        <Route path="/form" element={<Form />} />
+      </Routes>
+    </>
   );
 }
 
