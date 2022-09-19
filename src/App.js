@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import './index.css';
 
 import Header from './components/header/Header';
-import BookList from './components/books/BookList';
-import Category from './components/books/Category';
+import BookList from './components/redux/books/BookList';
+import Category from './components/redux/categories/Category';
 
 function App() {
   return (

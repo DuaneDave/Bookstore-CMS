@@ -1,5 +1,5 @@
-import Input from '../../UI/Input';
-import Button from '../../UI/Button';
+import Input from './Input';
+import Button from './Button';
 
 function Form() {
   return (
