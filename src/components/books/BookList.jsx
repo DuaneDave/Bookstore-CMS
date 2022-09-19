@@ -1,5 +1,5 @@
 import Book from './Book';
-import Form from '../../../UI/Form';
+import Form from '../form/Form';
 
 const data = [
   {

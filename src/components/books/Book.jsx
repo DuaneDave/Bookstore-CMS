@@ -1,4 +1,4 @@
-import Category from '../../categories/Category';
+import Category from './Category';
 
 function Book({ title, author }) {
   return (
