@@ -1,6 +1,16 @@
-import Category from './Category';
+import { useDispatch } from 'react-redux';
+import Button from '../../UI/Button';
 
-function Book({ title, author }) {
+function Book({ title, author, index }) {
+  const dispatch = useDispatch();
+
+  const removeBookHandler = () => {
+    dispatch({
+      type: 'bookstore/books/REMOVE_BOOK',
+      payload: index,
+    });
+  };
+
   return (
     <div>
       <div>
@@ -16,7 +26,11 @@ function Book({ title, author }) {
       <div>
         <span>Current Chapter</span>
         <span>Chapter 17</span>
-        <Category />
+        <Button
+          type="button"
+          title="Remove Book"
+          onAction={removeBookHandler}
+        />
       </div>
     </div>
   );
