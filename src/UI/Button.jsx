@@ -1,6 +1,10 @@
-/* eslint-disable */
-function Button({ type, title }) {
-  return <button type={type}>{title}</button>;
+function Button({ type, title, onAction }) {
+  return (
+    // eslint-disable-next-line react/button-has-type
+    <button type={type} onClick={onAction}>
+      {title}
+    </button>
+  );
 }
 
 export default Button;
