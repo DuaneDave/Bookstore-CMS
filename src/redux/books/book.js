@@ -1,7 +1,25 @@
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
-const booksReducer = (state = [], action) => {
+const initialState = [
+  {
+    id: 1,
+    title: 'Book title',
+    Author: 'Author',
+  },
+  {
+    id: 2,
+    title: 'Book title',
+    author: 'Author',
+  },
+  {
+    id: 3,
+    title: 'Book',
+    author: 'David',
+  },
+];
+
+const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.payload];
