@@ -1,7 +1,8 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../UI/Button';
 
 function Category() {
+  const category = useSelector((state) => state.category);
   const dispatch = useDispatch();
 
   const checkStatusHandler = () => {
@@ -11,7 +12,14 @@ function Category() {
   };
 
   return (
-    <Button type="button" title="CHECK STATUS" onAction={checkStatusHandler} />
+    <div>
+      <p>{category}</p>
+      <Button
+        type="button"
+        title="CHECK STATUS"
+        onAction={checkStatusHandler}
+      />
+    </div>
   );
 }
 
