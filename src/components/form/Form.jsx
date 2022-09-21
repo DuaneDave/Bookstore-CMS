@@ -1,5 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { addBook } from '../../redux/books/book';
 
 import Input from '../../UI/Input';
 import Button from '../../UI/Button';
@@ -7,20 +8,18 @@ import Button from '../../UI/Button';
 function Form() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-
-  const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
 
   const addBookHandler = (e) => {
     e.preventDefault();
-    dispatch({
-      type: 'bookstore/books/ADD_BOOK',
-      payload: {
-        id: books.length + 1,
+    dispatch(
+      addBook({
+        item_id: Math.floor(Math.random() * 100),
         title,
         author,
-      },
-    });
+        category: 'Action',
+      }),
+    );
 
     setTitle('');
     setAuthor('');
