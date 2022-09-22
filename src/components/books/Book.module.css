@@ -35,12 +35,6 @@
   font-weight: 300;
 }
 
-.actions span:not(:last-of-type) {
-  margin-right: 0.5rem;
-  border-right: 1px solid #ccc;
-  padding-right: 0.5em;
-}
-
 .progress h2 {
   font-family: 'Montserrat', serif;
   font-weight: 500;
@@ -50,6 +44,12 @@
   font-size: 0.8rem;
   color: #ccc;
   font-family: 'Montserrat', serif;
+}
+
+.actions span:not(:last-of-type) {
+  margin-right: 0.5rem;
+  border-right: 1px solid #ccc;
+  padding-right: 0.5em;
 }
 
 .info {
