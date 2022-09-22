@@ -1,14 +1,12 @@
 import { useDispatch } from 'react-redux';
 import Button from '../../UI/Button';
+import { removeBook } from '../../redux/books/book';
 
 function Book({ title, author, index }) {
   const dispatch = useDispatch();
 
   const removeBookHandler = () => {
-    dispatch({
-      type: 'bookstore/books/REMOVE_BOOK',
-      payload: index,
-    });
+    dispatch(removeBook(index));
   };
 
   return (
