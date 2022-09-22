@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+import styles from './BookList.module.css';
 import Book from './Book';
 import Form from '../form/Form';
 import { getBooks } from '../../redux/books/book';
@@ -13,7 +14,7 @@ function BookList() {
   }, [books, dispatch]);
 
   return (
-    <div>
+    <main className={styles.container}>
       {books.map((book) => (
         <Book
           key={book.item_id}
@@ -23,7 +24,7 @@ function BookList() {
         />
       ))}
       <Form />
-    </div>
+    </main>
   );
 }
 
