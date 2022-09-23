@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
+
+import styles from './Header.module.css';
 
 function Header() {
   return (
-    <div className="header">
-      <h1>Bookstore CMS</h1>
-      <nav>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <h1>Bookstore CMS</h1>
         <ul>
           <li>
             <Link to="/books">Books</Link>
@@ -14,7 +17,10 @@ function Header() {
           </li>
         </ul>
       </nav>
-    </div>
+      <span>
+        <FaUser />
+      </span>
+    </header>
   );
 }
 

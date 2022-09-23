@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 2em;
+}
+
+.container h2 {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.entries {
+  display: flex;
+}
+
+.entries .title {
+  width: 50%;
+  margin-right: 1rem;
+  padding: 0.8em 1em;
+  font-size: 1rem;
+  font-family: 'Montserrat', serif;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.entries .author {
+  width: 30%;
+  margin-right: 1rem;
+  padding: 0.8em 1em;
+  font-size: 1rem;
+  font-family: 'Montserrat', serif;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.entries .title:focus,
+.entries .author:focus {
+  border: 1px solid #1179c9;
+}
+
+.addEntry {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.705);
+  background: #0290ff;
+  font-weight: 300;
+  padding: 0.5em 3.2em;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}

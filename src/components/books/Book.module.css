@@ -1,0 +1,95 @@
+.book {
+  display: flex;
+  border: #ccc 1px solid;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.details p {
+  color: #ccc;
+  font-family: 'Montserrat', serif;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.details h3 {
+  font-size: 1.3rem;
+  color: #3b3939;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.details h5 {
+  color: #0290ff;
+  font-size: 0.87rem;
+  margin-bottom: 0.7rem;
+  font-weight: 300;
+}
+
+.actions {
+  font-size: 0.8rem;
+  color: #0290ff;
+  font-weight: 300;
+}
+
+.progress h2 {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+}
+
+.progress span {
+  font-size: 0.8rem;
+  color: #ccc;
+  font-family: 'Montserrat', serif;
+}
+
+.actions span:not(:last-of-type) {
+  margin-right: 0.5rem;
+  border-right: 1px solid #ccc;
+  padding-right: 0.5em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+  padding-left: 5em;
+}
+
+.info p {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-bottom: 0.2rem;
+}
+
+.info h2 {
+  font-size: 0.9rem;
+  color: rgb(124, 121, 121);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.remove {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.705);
+  background: #0290ff;
+  font-weight: 300;
+  padding: 0.5em 3em;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: #087efc;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .book {
+    padding: 1em 2em;
+  }
+}

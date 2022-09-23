@@ -1,5 +1,5 @@
 function Input({
-  type, placeholder, onUpdate, value,
+  type, placeholder, onUpdate, value, classes,
 }) {
   return (
     <input
@@ -8,6 +8,7 @@ function Input({
       placeholder={placeholder}
       onChange={onUpdate}
       value={value}
+      className={classes}
     />
   );
 }
